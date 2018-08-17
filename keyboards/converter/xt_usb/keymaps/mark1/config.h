@@ -1,0 +1,4 @@
+#pragma once
+
+#define MAGIC_KEY_BOOTLOADER SLCK
+#define IGNORE_MOD_TAP_INTERRUPT
