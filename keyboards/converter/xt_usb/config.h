@@ -64,10 +64,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     XT_RST_DDR  &= ~(1<<XT_RST_BIT);  \
 } while (0)
 
-/* INT1 for falling edge of clock line */
+/* INT1 for rising edge of clock line */
 #define XT_INT_INIT()  do {    \
     EICRA |= ((1<<ISC11) |      \
-              (0<<ISC10));      \
+              (1<<ISC10));      \
 } while (0)
 /* clears flag and enables interrupt */
 #define XT_INT_ON()  do {      \
