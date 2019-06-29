@@ -48,9 +48,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     setPinInput(XT_RST_PIN); \
 } while (0)
 
-/* INT1 for falling edge of clock line */
+/* INT1 for rising edge of clock line */
 #define XT_INT_INIT() do { \
-    EICRA |= ((1 << ISC11) | (0 << ISC10)); \
+    EICRA |= ((1 << ISC11) | (1 << ISC10)); \
 } while (0)
 
 /* clears flag and enables interrupt */
