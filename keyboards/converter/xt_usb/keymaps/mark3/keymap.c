@@ -1,8 +1,6 @@
 #include QMK_KEYBOARD_H
 
 #define _______ KC_TRNS
-#define KC_HOME LGUI(KC_LEFT) // Home, or cmd-left
-#define KC_END LGUI(KC_RGHT) // End, or cmd-right
 #define KC_SLP LGUI(LALT(KC_POWER)) // sleep, or cmd-option-power
 #define KC_LKSC LCTL(LSFT(KC_POWER)) // lock screen, or ctrl-shift-power
 
