@@ -17,7 +17,7 @@
 #define KC_LSFO OSM(MOD_LSFT)
 #define KC_RSFO OSM(MOD_RSFT)
 
-// Mark II keyboard layout for GH60 Satan
+// Mark III keyboard layout for GH60 Satan
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // 0: qwerty
   [0] = LAYOUT_all(
