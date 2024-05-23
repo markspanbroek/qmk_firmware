@@ -44,19 +44,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Movement layer (Lower)
  * ,-----------------------------------------------------------------------------------.
- * |Power |      | Play | Vol+ | Mute |      |      | Home |  Up  |  End | PGUP | Del  |
+ * |Power |      | Play | Vol+ | Mute |  {   |   }   | Home |  Up  |  End | PGUP | Del  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      | Prev | Vol- | Next |      |      | Left | Down |Right | PGDN |Enter |
+ * |      |      | Prev | Vol- | Next |  (   |   )  | Left | Down |Right | PGDN |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |      |      |      |      |      |      |      |      |      |      |      |      |
+ * |      |      |      |      |      |  [   |   ]  |      |      |      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |             |      |      |      |      |      |
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_planck_grid(
-    KC_PWR,  XXXXXXX, KC_MPLY, KC_VOLU, KC_MUTE, XXXXXXX, XXXXXXX, KC_HOME, KC_UP,   KC_END,  KC_PGUP, KC_DEL ,
-    _______, XXXXXXX, KC_MRWD, KC_VOLD, KC_MFFD, XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_ENT ,
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
+    KC_PWR,  XXXXXXX, KC_MPLY, KC_VOLU, KC_MUTE, KC_LCBR, KC_RCBR, KC_HOME, KC_UP,   KC_END,  KC_PGUP, KC_DEL ,
+    _______, XXXXXXX, KC_MRWD, KC_VOLD, KC_MFFD, KC_LPRN, KC_RPRN, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, _______,
+    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
 ),
 
